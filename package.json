@@ -51,6 +51,6 @@
     "unused": true
   },
   "dependencies": {
-    "jsdom": "^13.0.0"
+    "jsdom": "^15.2.0"
   }
 }
