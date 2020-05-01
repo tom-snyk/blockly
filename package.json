@@ -18,9 +18,10 @@
     "name": "Neil Fraser"
   },
   "scripts": {
-    "prepare": "gulp blockly_javascript_en",
+    "prepare": "npm run snyk-protect && gulp blockly_javascript_en",
     "lint": "eslint .",
-    "test": "tests/run_all_tests.sh"
+    "test": "tests/run_all_tests.sh",
+    "snyk-protect": "snyk protect"
   },
   "license": "Apache-2.0",
   "private": true,
@@ -51,6 +52,8 @@
     "unused": true
   },
   "dependencies": {
-    "jsdom": "^13.0.0"
-  }
+    "jsdom": "^13.0.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
